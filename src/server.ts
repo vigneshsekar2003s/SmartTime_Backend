@@ -18,7 +18,10 @@ const app = express();
 
 app.use(
   cors({
-    origin: true,
+    origin: [
+      "http://localhost:5173",
+      "https://smart-time-client-hsx5.vercel.app",
+    ],
     credentials: true,
   })
 );
