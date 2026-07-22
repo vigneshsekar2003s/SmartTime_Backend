@@ -16,13 +16,9 @@ connectDB();
 
 const app = express();
 
-
 app.use(
   cors({
-    origin: [
-      "http://localhost:5173",
-      "https://smart-time-client-5ljn.vercel.app",
-    ],
+    origin: true,
     credentials: true,
   })
 );
